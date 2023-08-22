@@ -1,0 +1,12 @@
+execute if entity @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0]
+
+team join Rojo @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0]
+item replace entity @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0] armor.chest with minecraft:leather_chestplate{display:{color:11546150}}
+item replace entity @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0] armor.legs with minecraft:leather_leggings{display:{color:11546150}}
+item replace entity @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0] armor.feet with minecraft:leather_boots{display:{color:11546150}}
+item replace entity @a[x=19,y=-61,z=14,dx=0,dy=1,dz=0] armor.head with minecraft:leather_helmet{display:{color:11546150}}
+
+
+
+/team modify Rojo prefix [{"text":"[","color":"gray"},{"text":"Rojo","color":"red"},{"text":"] ","color":"gray"}]
+/tp @p[team=Rojo] 19 -56 22
