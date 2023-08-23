@@ -1,0 +1,24 @@
+Root: /tp 0 3 0
+
+Isla 1 (x): /tp 1000 30 0
+Isla 2 (x): /tp 809 30 588
+Isla 3 (x): /tp 309 30 951
+Isla 4 (x): /tp -309 30 951 /setblock -309 30 951 minecraft:glowstone
+Isla 5 (x): /tp -809 30 588 /setblock -809 30 588 minecraft:glowstone
+Isla 6 (x): /tp -1000 30 0 /setblock -1000 30 0 minecraft:glowstone
+Isla 7 (x): /tp -809 30 -588 /setblock -809 30 -588 minecraft:glowstone
+Isla 8 (x): /tp -309 30 -951 /setblock -309 30 -951 minecraft:glowstone
+Isla 9 (x): /tp 309 30 -951 /setblock 309 30 -951 minecraft:glowstone
+Isla 10 (x): /tp 809 30 -588 /setblock 809 30 -588 minecraft:glowstone
+
+
+SubBase 1 (x): /tp 750 60 0
+SubBase 2 (x): /tp 607 60 441
+SubBase 3 (x): /tp 232 60 713
+SubBase 4 (x): /tp -232 60 713
+SubBase 5 (x): /tp -607 60 441
+SubBase 6 (x): /tp -750 60 0
+SubBase 7 (x): /tp -607 60 -441xc xc xc xc xc xc 
+SubBase 8 (x): /tp -232 60 -713
+SubBase 9 (x): /tp 232 60 -713
+SubBase 10 (x): /tp 607 60 -441

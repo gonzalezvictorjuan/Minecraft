@@ -114,22 +114,32 @@ createCylinder(20, 0, 64);
 createCylinder(80, 0, 150);
 
 const coordenadas = [
-  { x: 1000, y: 30, z: 0, color: 0x008f39 },
-  { x: 809.017, y: 30, z: 587.785, color: 0xff0000 },
-  { x: 309.017, y: 30, z: 951.057, color: 0x0000ff },
-  { x: -309.017, y: 30, z: 951.057, color: 0xffff00 },
-  { x: -809.017, y: 30, z: 587.785, color: 0xffc0cb },
-  { x: -1000, y: 30, z: 0, color: 0xffa500 },
-  { x: -809.017, y: 30, z: -587.785, color: 0x800080 },
-  { x: -309.017, y: 30, z: -951.057, color: 0x808080 },
-  { x: 309.017, y: 30, z: -951.057, color: 0xffffff },
-  // { x: 809.017, y: 30, z: -587.785, color: 0xa32372 },
-  { x: 1213.5256744358335, y: 30, z: -881.6776267349961, color: 0xa32372 },
+  { x: 1000, y: 30, z: 0, r: 250, color: 0x008f39 },
+  { x: 809, y: 30, z: 588, r: 250, color: 0xff0000 },
+  { x: 309, y: 30, z: 951, r: 250, color: 0x0000ff },
+  { x: -309, y: 30, z: 951, r: 250, color: 0xffff00 },
+  { x: -809, y: 30, z: 588, r: 250, color: 0xffc0cb },
+  { x: -1000, y: 30, z: 0, r: 250, color: 0xffa500 },
+  { x: -809, y: 30, z: -588, r: 250, color: 0x800080 },
+  { x: -309, y: 30, z: -951, r: 250, color: 0x808080 },
+  { x: 309, y: 30, z: -951, r: 250, color: 0xffffff },
+  { x: 809, y: 30, z: -588, r: 250, color: 0xa32372 },
+
+  { x: 750, y: 30, z: 0, r: 10 },
+  { x: 607, y: 30, z: 441, r: 10 },
+  { x: 232, y: 30, z: 713, r: 10 },
+  { x: -232, y: 30, z: 713, r: 10 },
+  { x: -607, y: 30, z: 441, r: 10 },
+  { x: -750, y: 30, z: 0, r: 10 },
+  { x: -607, y: 30, z: -441, r: 10 },
+  { x: -232, y: 30, z: -713, r: 10 },
+  { x: 232, y: 30, z: -713, r: 10 },
+  { x: 607, y: 30, z: -441, r: 10 },
 ];
 
 coordenadas.forEach((c) => {
   // createSphere(250, c.x, c.y, c.z, c.color);
-  createCylinder(250, c.x, c.y, c.z, c.color);
+  createCylinder(c.r, c.x, c.y, c.z, c.color);
 });
 const animate = () => {
   renderer.render(scene, camera);
